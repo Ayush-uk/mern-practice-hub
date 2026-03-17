@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+<h3 id="greeting"></h3>
+
+
+    <script>
+        let date = new Date();
+        console.log(date);
+        let hours =date.getHours();
+        console.log(hours);
+        let heading = document.querySelector('#greeting');
+        console.log(hours);
+        if(hours> 5 && hours<12){
+            heading.innerText ='good morning '
+        }
+    else if (hours> 12 && hours<18){
+        heading.innerText= 'good evening ';
+
+    }
+    else { 
+        heading.innerText ='good night';
+
+    }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

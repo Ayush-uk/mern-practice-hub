@@ -1,0 +1,24 @@
+#outer{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+}
+.ayush{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding-left: ;
+    margin: 10px;
+
+   
+
+}
+#w{
+    background-color: red;
+}
+    #e{
+        background-color: yellow;}
+#r{
+    background-color: green;
+}

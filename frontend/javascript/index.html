@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basics</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <button   class="bagbutton" onclick="cartquantity=cartquantity+1"
+    document.queryselector('#cartsummary').innerText= 'your bag has'+cartquantity+' items' >add to bag</button>
+    <button class="wishlist" onclick="alert('item has been added to the wishlist')"> move to wishlist</button>
+    <button   class="bagbutton" onclick="cartquantity=cartquantity+2"
+    document.queryselector('#cartsummary').innerText= 'your bag has'+cartquantity+' items' > Add 1 +1 sale item</button>
+    <h1 id="cartsummary"></h1>
+
+
+    <script>
+        let cartquantity=0;
+        document.queryselector('#cartsummary').innerText= `your bag has+ ${cartquantity}+ items`
+
+    </script>
+</body>
+</html>

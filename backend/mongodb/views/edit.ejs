@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit message</title>
+</head>
+<body>
+
+    <h3>edit your chat <%=chat._id%></h3>
+    <p>
+        This chat is sended from <b> <%=chat.from%> </b> To <b><%=chat.to%></b>
+
+         <form action="/chats/<%= chat._id %>?_method=PUT" method="POST">
+            <textarea name="msg"><%= chat.msg%> </textarea>
+            <button>complete</button>
+        </form>
+    </p>
+
+
+
+
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Message</title>
+</head>
+<link rel="stylesheet" href="/edit.css">
+<body>
+
+  <h3>Edit your chat <%= chat._id %></h3>
+  <p>
+    This chat was sent from <b><%= chat.from %></b> to <b><%= chat.to %></b>
+  </p>
+
+  <form action="/chats/<%= chat._id %>?_method=PUT" method="POST">
+    <textarea name="msg" rows="3" cols="40"><%= chat.msg %></textarea>
+    <br><br>
+    <button type="submit">Complete</button>
+  </form>
+
+</body>
+</html>
